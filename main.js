@@ -1,4 +1,6 @@
-//se pueden declarar funciones como si fueran objetos. Sin embargo, es un enfoque que no se suele utilizar en producción.
-const saludar = new Function("return 'Hola';");
-
-saludar(); // 'Hola'
+//Funciones Anonimas
+//Las funciones anónimas son aquellas que no tienen nombre y se utilizan generalmente como argumentos de otras funciones.
+setTimeout(function() {
+    console.log('Han pasado 5 segundos');
+  }, 5000);
+  
