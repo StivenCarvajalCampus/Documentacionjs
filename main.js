@@ -1,9 +1,7 @@
-//Funciones por declaración
-//Esta forma permite declarar una función que existirá a lo largo de todo el código:
-
-function saludar() {
+//«guardan funciones» dentro de variables, para posteriormente «ejecutar dichas variables».
+// El segundo "saludar" (nombre de la función) se suele omitir: es redundante
+const saludo = function saludar() {
     return "Hola";
-  }
+  };
   
-  saludar(); // 'Hola'
-  typeof saludar; // 'function'
+  saludo(); // 'Hola'
