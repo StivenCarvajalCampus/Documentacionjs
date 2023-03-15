@@ -1,7 +1,4 @@
-//«guardan funciones» dentro de variables, para posteriormente «ejecutar dichas variables».
-// El segundo "saludar" (nombre de la función) se suele omitir: es redundante
-const saludo = function saludar() {
-    return "Hola";
-  };
-  
-  saludo(); // 'Hola'
+//se pueden declarar funciones como si fueran objetos. Sin embargo, es un enfoque que no se suele utilizar en producción.
+const saludar = new Function("return 'Hola';");
+
+saludar(); // 'Hola'
